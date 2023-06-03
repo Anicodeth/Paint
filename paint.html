@@ -3,25 +3,41 @@
 <head>
 	<title>Paint Application</title>
 	<style>
+		.container{
+			width:100%;
+]		}
+		.main{
+			margin:auto;
+			width:fit-content;
+		}
 		canvas {
 			border: 1px solid black;
 		}
 		button {
-			margin-right: 10px;
+			font-family: monospace;
+			font-size: 0.7rem ;
+			width:13.6%;
+		    margin-top:none;
+		    height:2rem;
+		    outline: none;
+			
 		}
 	</style>
 </head>
 <body>
-	<canvas id="canvas" width="500" height="500"></canvas>
-	<br>
-	<button id="red">Red</button>
-	<button id="blue">Blue</button>
-	<button id="green">Green</button>
-	<button id="eraser">Eraser</button>
-	<br>
-	<button id="small">Small Brush</button>
-	<button id="medium">Medium Brush</button>
-	<button id="large">Large Brush</button>
+	<div class = "container">
+		<div class = "main">
+			<canvas id="canvas" width="500" height="500"></canvas>
+			<br>
+			<button id="red">Red</button>
+			<button id="blue">Blue</button>
+			<button id="green">Green</button>
+			<button id="eraser">Eraser</button>
+			<button id="small">S. Brush</button>
+			<button id="medium">M. Brush</button>
+			<button id="large">L. Brush</button>
+	    </div>
+    </div>
 	<script src="paint.js"></script>
 </body>
 </html>
